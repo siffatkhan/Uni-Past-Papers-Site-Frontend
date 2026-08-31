@@ -1,0 +1,31 @@
+.navBar {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* splits left menu and right icons */
+  padding: 0 20px;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar li {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 10px 20px;
+  border-collapse: collapse;
+}
+
+/* .highlight{
+  background-color: red;
+} */
+
+/* .navBar .search {
+  border: 1px solid black;
+  padding: 10px;
+} */

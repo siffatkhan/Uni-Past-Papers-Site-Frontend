@@ -1,0 +1,175 @@
+
+/* ====================================================================== */
+.gpa-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.gpa-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.course-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 7px;
+  margin-bottom: 12px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.course-input,
+.course-select {
+  flex: 1 1 auto;
+  min-width: 70px;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; 
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+}
+
+.course-select option {
+  font-size: 12px; /*  1.8 rem reduce dropdown option size */
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  user-select: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none; 
+}
+
+.add-btn,
+.calc-btn,
+.reset-btn {
+  padding: 8px 14px;
+  border: 1px solid black;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 13px;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+
+  
+}
+
+.add-btn:hover,
+.calc-btn:hover:enabled,
+.reset-btn:hover {
+  border: 1px solid  #6600EA;
+  background:  #6600EA;
+   /* background: black; */
+  color: white;
+}
+ 
+.calc-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gpa-result {
+    /* font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.2 rem;
+  font-weight: bold;
+  color: #6600EA;
+  
+  /* border: 1px solid black; */
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 8px;
+  
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
+  background-color: white;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  /* background-color: #f5f5f5; */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInSlideUp 0.5s forwards;
+  width: 50%;
+}
+
+@keyframes fadeInSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grading-scale {
+  margin-top: 80px;
+  border:1px  solid #ccc ;
+}
+
+.grading-scale h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.grading-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grading-table th,
+.grading-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .course-row {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+    .course-input,
+  .course-select {
+    width: auto;
+    min-width: 60px;
+    max-width: 90px;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+
+  .buttons {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .gpa-result {
+    width: 60%;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .grading-table{
+    font-size: 12px;
+  }
+
+}
+
+
+
+
+ 

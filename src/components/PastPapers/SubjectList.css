@@ -1,0 +1,27 @@
+.parent-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.NotFound{
+  font-size: 1.5rem;
+  color: #000000;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-family: 'AvenirLTW01-35Light','Avenir', sans-serif;
+
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

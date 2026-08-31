@@ -1,0 +1,41 @@
+.search-container {
+  text-align: center;
+  margin: 40px 20px;
+  margin-bottom: 60px;
+}
+
+.search-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  display: inline-block; /* important for transform effect */
+  transition: transform 0.8s ease;
+}
+
+.search-container h1:hover {
+  transform: scaleX(1.1); /* widens left and right */
+}
+
+
+.search-container p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-family: 'AvenirLTW01-35Light','Avenir', sans-serif;
+}
+
+.search-container input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  
+}
+
+.search-container input:focus {
+  border-color: black;
+}
