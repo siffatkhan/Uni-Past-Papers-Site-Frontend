@@ -1,0 +1,52 @@
+.journal-page {
+  padding: 20px 8px;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+}
+
+.journal-contribute {
+  max-width: 820px;
+  margin: 0 auto 22px;
+  padding: 14px 20px;
+  color: #2d164d;
+  background: #f3e9ff;
+  border: 1px solid #6600EA;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.journal-contribute h2 {
+  margin: 0 0 5px;
+  color: #6600EA;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+}
+
+.journal-contribute p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.journal-contribute strong {
+  color: #000;
+}
+
+.journals-empty {
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .journal-page {
+    padding: 14px 8px;
+  }
+
+  .journal-contribute {
+    padding: 12px 14px;
+  }
+
+  .journal-contribute h2 {
+    font-size: 1.2rem;
+  }
+}

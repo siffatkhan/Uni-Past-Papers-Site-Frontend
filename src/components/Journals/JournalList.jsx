@@ -4,6 +4,7 @@ import axios from "axios";
 import JournalListSkeleton from "../Skeletons/JournalListSkeleton";
 import {ErrorContext} from "../../contexts/ErrorContext";
 import {JOURNALS_API} from "../../config"
+import "./JournalList.css";
 
 
 
@@ -54,13 +55,22 @@ const JournalList = ({shouldFetchJournals}) => {
     return <JournalListSkeleton />;
   }
 
-  if (blogs.length === 0) {
-    return <p style={{ textAlign: "center", padding: "40px 0" }}>No journals found.</p>;
-  }
-
   return (
-    <div>
-      <JournalCard blogs={blogs}/>   {/* <p>List of all journal cards here...</p> */}
+    <div className="journal-page">
+      <section className="journal-contribute" aria-labelledby="journal-contribute-title">
+        <h2 id="journal-contribute-title">Want to Contribute a Journal?</h2>
+        <p>
+          Send your journal with your name, semester, department, and relevant
+          details to <strong>imspectrum1@gmail.com</strong>. After review, we
+          will publish it here.
+        </p>
+      </section>
+
+      {blogs.length === 0 ? (
+        <p className="journals-empty">No journals found.</p>
+      ) : (
+        <JournalCard blogs={blogs}/>
+      )}
     </div>
   );
 };

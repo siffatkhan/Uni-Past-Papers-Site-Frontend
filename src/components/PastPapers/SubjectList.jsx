@@ -85,15 +85,12 @@ if (!shouldFetchSubject) return null;
         <p className="hosting-goal"><strong>Hosting Goal: Rs. 5,000</strong></p>
         <p>
           You can contribute <strong>Rs. 50, Rs. 100, or any amount you're
-          comfortable with.</strong>
+          comfortable with. Thank You ! </strong> 
         </p>
         <div className="hosting-account">
           <p><strong>Account Name:</strong> Siffat ullah</p>
           <p><strong>Easypaisa:</strong> 03467755446</p>
         </div>
-        <p className="hosting-thanks">
-          Thank you for helping us keep the past papers free and accessible.
-        </p>
       </section>
       <div className="cards">
         {filteredSubjects.length > 0 ? (filteredSubjects.map((subject, index) => (
