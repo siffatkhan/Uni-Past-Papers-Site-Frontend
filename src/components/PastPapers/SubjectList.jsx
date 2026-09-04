@@ -75,6 +75,26 @@ if (!shouldFetchSubject) return null;
       <div >
         <SubjectSearch onChange={handleChange} input={subjectInput}/>
       </div>
+      <section className="hosting-support" aria-labelledby="hosting-support-title">
+        <h2 id="hosting-support-title">Help Us Keep the Site Running</h2>
+        <p>
+          The site is currently running on free hosting, which can make it slow
+          at times. We're trying to move to better hosting and get a proper
+          domain so the site stays fast and accessible.
+        </p>
+        <p className="hosting-goal"><strong>Hosting Goal: Rs. 5,000</strong></p>
+        <p>
+          You can contribute <strong>Rs. 50, Rs. 100, or any amount you're
+          comfortable with.</strong>
+        </p>
+        <div className="hosting-account">
+          <p><strong>Account Name:</strong> Siffat ullah</p>
+          <p><strong>Easypaisa:</strong> 03467755446</p>
+        </div>
+        <p className="hosting-thanks">
+          Thank you for helping us keep the past papers free and accessible.
+        </p>
+      </section>
       <div className="cards">
         {filteredSubjects.length > 0 ? (filteredSubjects.map((subject, index) => (
           <SubjectCard

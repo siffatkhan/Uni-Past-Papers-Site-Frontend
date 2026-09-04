@@ -18,12 +18,12 @@ const Footer = () => {
         </div>
 
         <div className="footer-links">
+          <a href="https://linkedin.com/in/siffat-khan" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
+          </a>
           <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i>
           </a>
-          {/* <a href="https://linkedin.com/in/siffat-khan" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i>
-          </a> */}
           {/* <a href="https://instagram.com/sifat_kk9" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a> */}
@@ -35,7 +35,7 @@ const Footer = () => {
           <a href="/terms">Terms of Service</a> */}
             <p>
               Disclaimer: This is our own personal work and is not associated 
-              with or endorsed by any entity.
+              with or endorsed by any institution.
             </p>
         </div>
 
