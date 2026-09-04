@@ -84,7 +84,7 @@ if (!shouldFetchSubject) return null;
         </p>
         <p className="hosting-goal"><strong>Hosting Goal: Rs. 5,000</strong></p>
         <p>
-          You can contribute <strong>Rs. 50, Rs. 100, or any amount you're
+          You can donate <strong> any amount you're
           comfortable with. Thank You ! </strong> 
         </p>
         <div className="hosting-account">

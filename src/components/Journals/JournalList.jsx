@@ -60,9 +60,8 @@ const JournalList = ({shouldFetchJournals}) => {
       <section className="journal-contribute" aria-labelledby="journal-contribute-title">
         <h2 id="journal-contribute-title">Want to Contribute a Journal?</h2>
         <p>
-          Send your journal with your name, semester, department, and relevant
-          details to <strong>imspectrum1@gmail.com</strong>. After review, we
-          will publish it here.
+          Send your journal with your name, semester & department details to <strong>imspectrum1@gmail.com</strong>. After review, we
+          will publish it here for juniors help.
         </p>
       </section>
 

@@ -38,16 +38,21 @@
 }
 
 .hosting-account {
-  max-width: 380px;
+  max-width: 520px;
   margin: 8px auto 0;
   padding: 6px 12px;
   background: #ffffff;
   border: 1px solid #d8b8ff;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .hosting-account p {
-  margin: 2px 0;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .cards {
@@ -72,6 +77,11 @@
 
   .hosting-support h2 {
     font-size: 1.35rem;
+  }
+
+  .hosting-account {
+    flex-direction: column;
+    gap: 2px;
   }
 
   .cards {
