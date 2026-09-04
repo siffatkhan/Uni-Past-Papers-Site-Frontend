@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./GPACalculator.css";
 
 const GPACalculator = () => {
+  const maxCourses = 12;
   const initialCourse = [{ name: "", credits: "", gradePoint: "" }];
   const [courses, setCourses] = useState(initialCourse);
   const [gpa, setGpa] = useState(null);
+  const [courseLimitMessage, setCourseLimitMessage] = useState("");
 
   const handleChange = (index, field, value) => {
     const newCourses = [...courses];
@@ -13,12 +15,19 @@ const GPACalculator = () => {
   };
 
   const addCourse = () => {
+    if (courses.length >= maxCourses) {
+      setCourseLimitMessage(`You can add a maximum of ${maxCourses} courses.`);
+      return;
+    }
+
     setCourses([...courses, { name: "", credits: "", gradePoint: "" }]);
+    setCourseLimitMessage("");
   };
 
   const resetCourses = () => {
     setCourses(initialCourse);
     setGpa(null);
+    setCourseLimitMessage("");
   };
 
   const calculateGPA = () => {
@@ -102,6 +111,12 @@ const GPACalculator = () => {
         </button>
        
       </div>
+
+      {courseLimitMessage && (
+        <p className="course-limit-message" role="alert">
+          {courseLimitMessage}
+        </p>
+      )}
 
       {gpa !== null && (
         <div className="gpa-result">
