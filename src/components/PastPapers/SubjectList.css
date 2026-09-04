@@ -10,7 +10,7 @@
   padding: 12px 20px;
   color: #2d164d;
   background: #f3e9ff;
-  border: 2px solid #6600EA;
+  border: 2px dashed #6600EA;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(102, 0, 234, 0.12);
   text-align: center;
