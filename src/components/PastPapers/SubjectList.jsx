@@ -72,26 +72,25 @@ if (!shouldFetchSubject) return null;
 
   return (
     <div className="parent-container">
-      <div >
-        <SubjectSearch onChange={handleChange} input={subjectInput}/>
-      </div>
       <section className="hosting-support" aria-labelledby="hosting-support-title">
         <h2 id="hosting-support-title">Help Us Keep the Site Running</h2>
         <p>
-          The site is currently running on free hosting, which can make it slow
+          Site is currently running on free hosting, which make it slow
           at times. We're trying to move to better hosting and get a proper
           domain so the site stays fast and accessible.
         </p>
         <p className="hosting-goal"><strong>Hosting Goal: Rs. 5,000</strong></p>
         <p>
-          You can donate <strong> any amount you're
-          comfortable with. Thank You ! </strong> 
+          You can donate <strong> any amount. Thank You! </strong>
         </p>
         <div className="hosting-account">
           <p><strong>Account Name:</strong> Siffat ullah</p>
           <p><strong>Easypaisa:</strong> 03467755446</p>
         </div>
       </section>
+      <div >
+        <SubjectSearch onChange={handleChange} input={subjectInput}/>
+      </div>
       <div className="cards">
         {filteredSubjects.length > 0 ? (filteredSubjects.map((subject, index) => (
           <SubjectCard
