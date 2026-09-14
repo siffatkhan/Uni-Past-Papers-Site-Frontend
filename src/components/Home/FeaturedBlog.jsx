@@ -38,7 +38,7 @@ const FeaturedBlog = () => {
   }, [showError]);
 
 
-  if (loading) { return <Loader size={72} label="Loading IMSpectrum..." />; }
+  if (loading) { return <Loader size={72} label="Loading ..." />; }
 // ===========================================================================
   return (
     <div className="featuredBlogContainer">
